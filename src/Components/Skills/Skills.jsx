@@ -1,6 +1,13 @@
+import { useState, useEffect } from 'react';
+
 const Skills = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setShow(true);
+  }, []);
   return (
-    <div id="skills" className="skills">
+    <div id="skills" className={show ? 'skills show' : 'skills'}>
       <h1>TECHNICAL SKILLS</h1>
       <div className="skills-container">
         <div className="skills-list">

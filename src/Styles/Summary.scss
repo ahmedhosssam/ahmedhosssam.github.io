@@ -3,6 +3,7 @@
 .summary-container {
   opacity: 0;
   transform: translateY(50px);
+  height: 80vh;
 
   margin: 30px;
   h1 {
@@ -34,8 +35,12 @@
   }
 
   .summary-buttons {
-    margin-top: 15px;
-    button {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    margin-top: 30px;
+    a {
+      color: white;
+      text-decoration: none;
       @include buttons;
       background-color: #7b1ec2;
       margin: 5px;
@@ -58,7 +63,7 @@
   }
 }
 
-.summary-container.show {
+.show {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -91,4 +96,20 @@
   font-size: 40px;
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: $mobile-width) {
+  .summary-container {
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .summary-paragraph {
+      max-width: 100%;
+    }
+  }
 }

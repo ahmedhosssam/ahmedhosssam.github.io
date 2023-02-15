@@ -42,20 +42,16 @@ const Summary = () => {
         </a>
       </div>
       <div className="summary-buttons">
-        <button>
-          <a href="#projects">Projects</a>
-        </button>
-        <button>
-          <a href="#contact">Contact Me</a>
-        </button>
-        <button>
-          <a
-            href="https://drive.google.com/file/d/1JAwiOdZjGp8lGkH2HnUlIxIU4a7ZdT8V/view?usp=sharing"
-            target="_blank"
-          >
-            Resume
-          </a>
-        </button>
+        <a href="#projects">Projects</a>
+
+        <a href="#contact">Contact Me</a>
+
+        <a
+          href="https://drive.google.com/file/d/1JAwiOdZjGp8lGkH2HnUlIxIU4a7ZdT8V/view?usp=sharing"
+          target="_blank"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );

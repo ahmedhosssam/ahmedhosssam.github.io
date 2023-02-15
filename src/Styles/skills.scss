@@ -36,3 +36,18 @@
     text-align: start;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .skills {
+    .skills-container {
+      @include flexCenter(column);
+      .skills-list {
+        max-width: 100%;
+      }
+    }
+    .skills-icons {
+      margin-top: 50px;
+      align-self: center;
+    }
+  }
+}
