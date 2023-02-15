@@ -28,8 +28,8 @@ const Projects = () => {
           img={project3}
           title="Personal Website"
           skills={['ReactJS', 'Javascript', 'Sass']}
-          repoUrl="https://ahmedhosssam.github.io/"
-          liveLink="https://ahmedhosssam.github.io/bosnai-pricing-page/"
+          repoUrl="https://github.com/ahmedhosssam/ahmedhosssam.github.io"
+          liveLink="https://ahmedhosssam.github.io/"
         />
       </div>
     </div>
