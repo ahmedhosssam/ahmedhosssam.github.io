@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Components
+import Header from './Components/Header/Header';
+
+// Styles
+import './Styles/App.scss';
+import './Styles/header.scss';
+import './Styles/variables.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <Header />
+  </React.StrictMode>
+);

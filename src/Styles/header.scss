@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+header {
+  @include flexCenter(row);
+  justify-content: space-between;
+  margin: 0 25px;
+
+  .header-buttons {
+    @include flexCenter(row);
+  }
+
+  .header-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #581c87;
+    }
+  }
+
+  img {
+    width: 300px;
+    cursor: pointer;
+  }
+}
