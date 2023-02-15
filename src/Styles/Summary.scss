@@ -36,18 +36,30 @@
   .summary-links {
     @include flexCenter(row);
     gap: 10px;
+    margin-top: 28px;
+  }
+  .github,
+  .linkedin,
+  .gmail {
+    transition: $hover-buttons;
   }
 
+  .github:hover {
+    color: black;
+  }
+
+  .linkedin:hover {
+    color: #0072b1;
+  }
+
+  .gmail:hover {
+    color: #c71610;
+  }
   .summary-link {
     cursor: pointer;
     font-size: 40px;
     color: white;
     text-decoration: none;
-    transition: $hover-buttons;
-
-    &:hover {
-      color: $second-fon-color;
-    }
   }
 
   .summary-buttons {
