@@ -5,7 +5,7 @@ const ContactMe = () => {
       <p className="lets-work">Let's work together</p>
       <div className="contact-info">
         <p>+20 101 252 0893</p>
-        <p>ahmedhosssam@gmail.com</p>
+        <p>ahmedhosssamps@gmail.com</p>
       </div>
 
       <div className="summary-links">
