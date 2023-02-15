@@ -26,19 +26,19 @@ const Summary = () => {
           href="https://github.com/ahmedhosssam"
           className="summary-link github"
         >
-          <i class="devicon-github-original"></i>
+          <i className="devicon-github-original"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/ahmedhossamm/"
           className="summary-link linkedin"
         >
-          <i class="devicon-linkedin-plain"></i>
+          <i className="devicon-linkedin-plain"></i>
         </a>
         <a
           href="mailto:ahmedhosssamps@gmail.com"
           className="summary-link gmail"
         >
-          <i class="devicon-google-plain"></i>
+          <i className="devicon-google-plain"></i>
         </a>
       </div>
       <div className="summary-buttons">

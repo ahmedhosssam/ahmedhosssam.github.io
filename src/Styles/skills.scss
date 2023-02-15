@@ -10,7 +10,7 @@
   .skills-icons {
     @include flexCenter(row);
     flex-wrap: wrap;
-    // align-self: flex-start;
+    align-self: flex-start;
     gap: 15px;
     max-width: 300px;
     p {

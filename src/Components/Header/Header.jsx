@@ -5,9 +5,17 @@ const Header = () => {
     <header>
       <img className="logo-signature" src={singature} />
       <div className="header-buttons">
-        <button className="header-button">Skills</button>
-        <button className="header-button">Projects</button>
-        <button className="header-button">Contact Me</button>
+        <a className="header-button" href="#skills">
+          Skills
+        </a>
+
+        <a className="header-button" href="#projects">
+          Projects
+        </a>
+
+        <a className="header-button" href="#contact">
+          Projects
+        </a>
       </div>
     </header>
   );

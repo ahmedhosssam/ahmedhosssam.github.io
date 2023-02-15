@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div className="skills">
+    <div id="skills" className="skills">
       <h1>TECHNICAL SKILLS</h1>
       <div className="skills-container">
         <div className="skills-list">

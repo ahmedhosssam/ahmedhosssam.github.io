@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.projects-container {
+  margin-top: 70px;
+  @include flexCenter(column);
+}
+
+.projects {
+  @include flexCenter(row);
+  gap: 20px;
+  flex-wrap: wrap;
+}
