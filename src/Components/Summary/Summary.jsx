@@ -1,6 +1,14 @@
+import { useState, useEffect } from 'react';
+
 const Summary = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <div className="summary-container">
+    <div className={show ? 'summary-container show' : 'summary-container'}>
       <h1>Hi, I'm Ahmed Hossam</h1>
       <p className="job-title">Frontend Developer</p>
       <p className="summary-paragraph">
@@ -9,7 +17,9 @@ const Summary = () => {
         users. I have a solid understanding of web technologies such as HTML,
         CSS, and JavaScript, and Libraries like ReactJS , and I'm able to create
         responsive layouts that work on all devices.{' '}
-        <a className="see-projects">See My Projects</a>
+        <a href="#projects" className="see-projects">
+          See My Projects
+        </a>
       </p>
       <div className="summary-links">
         <a href="https://github.com/ahmedhosssam" className="summary-link">

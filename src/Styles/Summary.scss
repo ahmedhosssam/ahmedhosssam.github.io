@@ -1,6 +1,9 @@
 @import './variables.scss';
 
 .summary-container {
+  opacity: 0;
+  transform: translateY(50px);
+
   margin: 30px;
   h1 {
     font-size: 60px;
@@ -20,6 +23,7 @@
     a {
       color: $second-fon-color;
       transition: $hover-buttons;
+      text-decoration: none;
       cursor: pointer;
       border-bottom: 1px solid transparent;
 
@@ -69,4 +73,10 @@
       }
     }
   }
+}
+
+.summary-container.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
