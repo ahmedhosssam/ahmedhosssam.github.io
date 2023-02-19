@@ -26,10 +26,10 @@ const Projects = () => {
 
         <ProjectItem
           img={project3}
-          title="Personal Website"
-          skills={['ReactJS', 'Javascript', 'Sass']}
-          repoUrl="https://github.com/ahmedhosssam/ahmedhosssam.github.io"
-          liveLink="https://ahmedhosssam.github.io/"
+          title="Quora Plus"
+          skills={['ReactJS', 'Javascript', 'Firebase', 'Sass']}
+          repoUrl="https://github.com/ahmedhosssam/quora-clone"
+          liveLink="https://qoura-94df1.web.app/"
         />
       </div>
     </div>
