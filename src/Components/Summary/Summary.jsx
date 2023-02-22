@@ -47,7 +47,7 @@ const Summary = () => {
         <a href="#contact">Contact Me</a>
 
         <a
-          href="https://drive.google.com/file/d/1JAwiOdZjGp8lGkH2HnUlIxIU4a7ZdT8V/view?usp=sharing"
+          href="https://drive.google.com/file/d/1KRef7Y6-zCg4LHfI-DZsdC0n8evz0Vkj/view?usp=sharing"
           target="_blank"
         >
           Resume
