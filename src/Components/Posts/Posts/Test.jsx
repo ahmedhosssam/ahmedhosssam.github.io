@@ -7,6 +7,7 @@ const Test = () => {
     }
     const title = "test"
     const date = "Mar 15 2024"
+    document.title = title
     return (
         <div style={st}>
             <h2><Link to="/" style={{color:'black', textDecoration:'none', 
