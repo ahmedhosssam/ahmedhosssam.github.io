@@ -5,12 +5,12 @@
     
     
     
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Ahmed Hossam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
