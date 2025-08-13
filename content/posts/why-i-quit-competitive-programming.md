@@ -60,6 +60,6 @@ Competitive programming is always an option, and if you didn't try it as a CS st
 Life is too short to waste on stuff that you don't like. You don't have the privilege to ignore things that you like and spend your time on something that other people enjoy. This time won't come back again. And it also doesn't make sense if you think about it, why would you ignore something you like and spend your time on something that you don't enjoy at all and you feel very bad doing it? What is the point?
 And if you already are in the middle of a sunk cost and you don't enjoy what are you doing, please quit and don't try to take revenge, there is no point to prove.
 
-You will always hear the motivational advice of "Never Give Up". I think this is actually a bad advice for a lot of people. Sometimes it's better to give up, because if you didn't you will end up waste more time, and time is very expensive.
+You will always hear the motivational advice of "Never Give Up". I think this is actually a bad advice for a lot of people. Sometimes it's better to give up, because if you don't you will end up waste more time, and time is very expensive.
 
 Also, try to think a little bit more in the decisions that you are about to take, don't think for just a day on how would you spend the next 1-2 years.
