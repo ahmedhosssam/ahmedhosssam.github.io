@@ -4,18 +4,18 @@ date = 2025-08-13T19:41:41+03:00
 +++
 ## TLDR
 
-I tried competitive programming for a whole year and it didn't work out well for me, I didn't enjoy it and didn't achieve anything remarkable as well. So it's better to take the L and move on and try other things that I wanted to try, but I couldn't because of competitive programming.
+I tried competitive programming for a whole year and it didn't work out well for me, I didn't enjoy it and didn't achieve anything remarkable as well. So it's better to take the L and move on and try other things I wanted to try, but I couldn't because of competitive programming.
 For the rest of the article I'm going to talk about the sunk cost fallacy.
 
 --------------------
 
-Alright, I want to talk about my experience at the activity of competitive programming and why it was a bad experience, but I also want to generalize the topic to a little bit to make it relevent for most people even if your problems in life has nothing to do with CP.
+Alright, I want to talk about my experience with competitive programming and why it was a bad experience, I also want to generalize the topic to a little bit to make it relevent for most people even if your problems in life has nothing to do with CP.
 
 Note: I'm going to say CP instead of competitive programming for the rest of the article because it's easier to write.
 
 ## My Story
 
-I got into CP because of a playlist from Mustafa Saad Youtube channel, and I really trust his opinions about computer science and studying and career, he said it was the best thing that happened to him and if he gets back in time he would do it again. So I said: well, why not trying it? Let's give it a chance. So I registered into codeforces and started solving problems from his problems sheet and started participating in contests, at that time I didn't have time to do other things, though I had plans to study systems programming and exploring computers and operating systems and how they work. But I couldn't find time to do it (All my time was allocated to CP and studying for college, I was also a GSoC contributor, so my schedule was full and there was no room for sys programming).
+I got into CP because of a playlist from Mustafa Saad Youtube channel, and I really trust his opinions about computer science, studying and career, he said it was the best thing that happened to him and if he gets back in time he would do it again. So I said: well, why not trying it? Let's give it a chance. So I registered into codeforces and started solving problems from his problem sheet and started participating in contests, at that time I didn't have time to do other things, though I had plans to study systems programming, operating systems and how computers work. But I couldn't find time to do it (All my time was allocated to CP and studying for college, I was also a [GSoC](https://summerofcode.withgoogle.com/) contributor, so my schedule was full and there was no room for sys programming).
 When it started getting tough (because of not being able to solve problems and losing rating in codeforces contests) I asked myself whether I want to continue or stop and go to sys programming, I had a gut feeling that CP wasn't for me and it's been already couple of months, so it would make total sense to stop, but I remembered Mustafa Saad's opinion about CP and how it was the greatest thing ever happened to him (he works at Nvidia at the time of writing this article) so I said: who am I do disagree with Mustafa Saad? Let's ignore sys programming and do more CP!
 And it was a wrong decision, the more I participated in contests, the more I hated it, but I continued!
 Until after ECPC 2024 (it's the regional ICPC contest for Egypt) I decided to take a break and start what I waited for, systems programming. I started reading an OS book and downloaded xv6 kernel to implement syscalls and explore how the kernel works, and it was way more fun than CP. So it made sense to stop CP completely and just focus on what I found more fun, right? Of course not!
@@ -25,7 +25,7 @@ So I decided to ignore OS and kernel dev (which I enjoyed more!) and came back t
 
 The funny part is that I was always questioning whether I love CP or not, and I was trying to convince myself that I love it because I realized that this is the only way to get better, if I hate it I won't get better. But it was so obvious that I didn't like it! but for some reason I decided to continue nevertheless and ignore everything else.
 
-I took a second break in the first 2 months of 2025 and decided to start a Youtube channel and make programming content and make more programming projects in general (because my github portfolio had almost no serious projects at all), and I also enjoyed it, not just that, I actually succeeded in getting views and a lot of people started watching my streams. I also had plans to learn sys programming while doing streams, I thought it would be fun.
+I took a second break in the first 2 months of 2025 and decided to start a [Youtube channel](https://www.youtube.com/@ahmedhossam6060) and make programming content and make more programming projects in general (because my github portfolio had almost no serious projects at all), and I also enjoyed it, not just that, I actually succeeded in getting views and a lot of people started watching my streams. I also had plans to learn sys programming while doing streams, I thought it would be fun.
 But guess what happened after those 2 months? Exactly. I stopped and came back to CP! It's really hilarious when you think about it. Why on earth would anyone give up on stuff that proved that it was more fun and more rewarding, and decide to come back to something that proved that it wasn't going any further?
 
 After the first 2 months of 2025 I decided to allocate all my time for CP until ECPC 2025. I started training with my new team and, to be honest, it was fun to train with a supportive team that has a good chemistry.
