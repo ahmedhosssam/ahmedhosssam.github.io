@@ -34,7 +34,7 @@ So, from March 2025 to July 2025, I went full CP mode, and guess what happened, 
 
 ## Sunk Cost Fallacy
 
-The story that I just finished actually has a name in psychology and economics, it's called Sunk Cost Fallacy.
+The story I just finished actually has a name in psychology and economics, it's called Sunk Cost Fallacy.
 The sunk cost here means the cost that has already been incurred and cannot be recovered (such as money, time, or effort). What happens in sunk cost fallacy situations is that people often prefer to continue doing something once an investment has been made, and it doesn't matter whether you realize it was a waste or not, you will continue because you believe that you can recover from your loss, and what often happens is that you even lose more.
 And that's exactly what happened to me with CP, I already tried it for a couple of months and it didn't work out well for me, and at the same time I had other things to do which have been proved that they were more fun for me. But I decided to come back to CP to recover the loss. And what happened? I ended up lose more time.
 
@@ -50,17 +50,16 @@ Competitive programming of course has a lot of benifits, you will learn how to c
 
 But, I don't think these are valid reasons to get into CP and spend all your time doing it. The only reason you should invest a lot of time in CP is that you really enjoy it, that's it. If you don't enjoy it just try something else.
 
-All of the previous benifits can be gained from other resources: You can learn how to code really fast and be good at implementation and debugging by working on a lot of complex projects. You can learn Data Structures and Algorithms and understand what is the point of those things by using them in real projects, and you will find a lot of use cases for a lot of Data structures and Algorithms, and by that way you will learn. You can get into a community and build a network in a million ways (Twitter, Discord, hackathons, or even Linkedin).
+All of the previous benifits can be gained from other resources: You can learn how to code really fast and be good at implementation and debugging by working on a lot of complex projects. You can learn Data Structures and Algorithms and understand what is the point of those things by using them in real projects, and you will find a lot of use cases for a lot of Data structures and Algorithms. You can get into a community and build a network in a million ways (Twitter, Discord, hackathons, or even Linkedin).
 So, CP is not the only way for sure, it's just one way, and if you didn't like it, just quit, don't think twice.
 
 Competitive programming is always an option, and if you didn't try it as a CS student I would recommend trying it for at least couple of months, but if you didn't enjoy it that's okay, there is no shame in that. Remember: It's not for everybody.
 
 ## Final advice
 
-Life is too short to waste on stuff that you don't like. You don't have the privilege to ignore things that you like and spend your time on something that other people enjoy but you don't. This time won't come back again. And it also doesn't make sense if you think about it, why would you ignore something you like and spend your time on something that you don't enjoy it at all and you feel very bad doing it? What is the point?
+Life is too short to waste on stuff that you don't like. You don't have the privilege to ignore things that you like and spend your time on something that other people enjoy. This time won't come back again. And it also doesn't make sense if you think about it, why would you ignore something you like and spend your time on something that you don't enjoy at all and you feel very bad doing it? What is the point?
 And if you already are in the middle of a sunk cost and you don't enjoy what are you doing, please quit and don't try to take revenge, there is no point to prove.
 
 You will always hear the motivational advice of "Never Give Up". I think this is actually a bad advice for a lot of people. Sometimes it's better to give up, because if you didn't you will end up waste more time, and time is very expensive.
 
 Also, try to think a little bit more in the decisions that you are about to take, don't think for just a day on how would you spend the next 1-2 years.
-

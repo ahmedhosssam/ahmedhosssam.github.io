@@ -5,21 +5,21 @@
     
     
     
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Ahmed Hossam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 13 Aug 2025 19:41:41 +0300</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why I Quit Competitive Programming</title>
-      <link>/posts/why-i-quit-competitive-programming/</link>
+      <link>//localhost:1313/posts/why-i-quit-competitive-programming/</link>
       <pubDate>Wed, 13 Aug 2025 19:41:41 +0300</pubDate>
       
-      <guid>/posts/why-i-quit-competitive-programming/</guid>
+      <guid>//localhost:1313/posts/why-i-quit-competitive-programming/</guid>
       <description>
         
           
