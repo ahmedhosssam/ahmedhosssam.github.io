@@ -2,7 +2,7 @@
 title = 'Why I Quit Competitive Programming'
 date = 2025-08-13T19:41:41+03:00
 +++
-## TLDR
+## TL;DR
 
 I tried competitive programming for a whole year and it didn't work out well for me, I didn't enjoy it and didn't achieve anything remarkable as well. So it's better to take the L and move on and try other things I wanted to try, but I couldn't because of competitive programming.
 For the rest of the article I'm going to talk about the sunk cost fallacy.
