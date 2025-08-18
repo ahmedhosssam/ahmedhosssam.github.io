@@ -3,6 +3,8 @@ title = 'How I Made ChatGPT Run on My Terminal without an API key?'
 date = 2025-08-18T21:42:42+03:00
 +++
 
+![alt text](/images/ch.png)
+
 I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a '_' for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.
 
 And, I also didn't want to do it with an API key (it would've been much easier), one of the reasons is that I cannot afford it in the long term, I'm still a student. So, I decided to hack around to figure out how can I extract the results from ChatGPT's website using web scraping libraries.
@@ -57,7 +59,7 @@ The main purpose of most of these flags is to make it very hard for websites to 
 
 First, you need to log-in to ChatGPT's website. Second, you need to allow the clipboard permission for chatgpt.com to make chatbang copy the content of the page and access the clipboard without asking, if you didn't allow that permission, `chatbang` will get stuck in the terminal because the browser waits for your permission to allow the clipboard access.
 
-You can do these steps by executing `chatbang --config`, by default chatbang uses `/usr/bin/google-chrome` as a default browser, if you want to change it to any Chromium-based browser (after executing `chatbang --config`) you can change it from the config file `$HOME/.config/chatbang/chatbang`. change it to the correct path of your favorite Chromium-based browser.
+You can do these steps by executing `chatbang --config`, by default chatbang uses `/usr/bin/google-chrome` as a default browser, if you want to change it to any Chromium-based browser (after executing `chatbang --config`) you can change it from the config file `$HOME/.config/chatbang/chatbang`. Change it to the correct path of your favorite Chromium-based browser.
 
 ## Playing with the DOM Tree
 
