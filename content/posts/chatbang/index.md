@@ -76,11 +76,11 @@ err := chromedp.Run(taskCtx,
 	chromedp.Click(`#prompt-textarea`, chromedp.ByID),
 )
 ```
-This code snippet searches for an element with the id `#prmopt-textarea` and send the prompt to it. And then it searches for the submit button with the id `#composer-submit-button` and click it.
+This code snippet searches for an element with the id `#prompt-textarea` and send the prompt to it. And then it searches for the submit button with the id `#composer-submit-button` and click it.
 
-The `modifiedPrompt` variable is the same prompt as the user entered it, but with adding ` (Make an answer in less than 5 lines)`. The reason behind this is that I hate the long responses from ChatGPT. In most cases I just want a one-line response, I don't want a whole article with an introduction and conclusion. Also because I don't the response to fill the whole terminal window, I opened chatbang to answer something and then I close it to continue my life. I don't want the response to distract me from the context of the terminal, if that makes sense.
+The `modifiedPrompt` variable is the same prompt as the user entered it, but with adding ` (Make an answer in less than 5 lines)`. The reason behind this is that I hate the long responses from ChatGPT. In most cases I just want a one-line response, I don't want a whole article with an introduction and conclusion. Also because I don't want the response to fill the whole terminal window, I opened chatbang to answer something and then I close it to continue my life. I don't want the response to distract me from the context of the terminal, if that makes sense.
 
-Anyways, aftet clicking the submit button we just wait for a response. Here I basically run an infinite for loop (because golang doesn't have a built-in while loop, you need to type `for {...}` to get the same behavior) that waits for the last copy button in the page to appear, which will appear after chatgpt complete the full response. The reason behind this is that chatgpt's page has a lot copy buttons, and all of them are the same button with the same attributes, so we need to wait for the last button to appear and then click it.
+Anyways, aftet clicking the submit button we just wait for a response. Here I basically run an infinite for loop (because golang doesn't have a built-in while loop, you need to type `for {...}` to get the same behavior) that waits for the last copy button in the page to appear, which will appear after chatgpt completes the full response. The reason behind this is that chatgpt's page has a lot copy buttons, and all of them are the same button with the same attributes, so we need to wait for the last button to appear and then click it.
 
 Sometimes (which is kind of rare) it chooses to click on the copy button of the last prompt, so you see your prompt as a result in the terminal, but that happens very rarely.
 
@@ -91,10 +91,10 @@ new Promise((resolve, reject) => { window.navigator.clipboard.readText() .then(t
 ```
 That line reads text from the clipboard using `navigator.clipboard.readText()`.
 
-And ChatGPT's website does a very great thing,  it gives you the response as a markdown format, not just text, which is a great opportunity to make the response quite beautiful in the terminal, not just plain text. And that idea was a suggestion from one of my friends, huge thanks to him.
+And ChatGPT's website does a great thing, it gives you the response as markdown, which is a great opportunity to make the response quite beautiful in the terminal, not just plain text. And that idea was a suggestion from one of my friends, huge thanks to him.
 
-And that's it! Now we have the response as a markdown format. We need to render it in the terminal. I use [go-term-markdown](https://github.com/MichaelMure/go-term-markdown) for that. It's a markdown rendering library written in go, and it's super easy to use.
+And that's it! Now we have the response as a markdown format. We need to render it in the terminal. I use [go-term-markdown](https://github.com/MichaelMure/go-term-markdown) for that. It's a markdown rendering library written in Go, and it's super easy to use.
 
 Everything else is just a loop to perform all these steps for every prompt.
 
-Finally, one challenge remains is when chatgpt.com decides to change the code of the page. For example if they decides to change the names of the `id`s and classnames, the whole program will break. We will need to make a new release for every change. I haven't figured out yet if there is a long term solution for something like this, but we will see.
+Finally, one challenge remains is when chatgpt.com decides to change the code of the page. For example if they decides to change the names of the `id`s and classnames, the whole program will break. We will need to make a new release for every change. I haven't figured out yet if there is a long term solution for something like that, but we will see.
