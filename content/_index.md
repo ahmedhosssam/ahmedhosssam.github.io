@@ -2,7 +2,7 @@
 title: "Ahmed Hossam"
 ---
 
-[Github](https://github.com/ahmedhosssam), [Twitter(X)](https://x.com/ahmedhossvm), [Linkedin](https://www.linkedin.com/in/ahmedhossamm/)
+[Github](https://github.com/ahmedhosssam) &nbsp; [Twitter(X)](https://x.com/ahmedhossvm) &nbsp; [Linkedin](https://www.linkedin.com/in/ahmedhossamm/)
 
 Hi, I'm Ahmed Hossam, a programmer, computer science student, and aspiring engineer.
 
