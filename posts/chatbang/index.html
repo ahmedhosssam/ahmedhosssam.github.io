@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        How I Made ChatGPT Run on My Terminal without an API key? ::
+        Ahmed Hossam — A simple theme for Hugo
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory)."
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://ahmedhosssam.github.io/posts/chatbang/" />
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+  integrity="sha384-mll67QQYkNVn4pXYpa9RMfMSX8ZKX9aYJt/0B6SZpHVi6U3HoR10Sn9VD8Kt6p/Z"
+  crossorigin="anonymous">
+
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+  integrity="sha384-sPj+KE0zA5NNz4YeK7zyrjUpglN46+lDkFjzAxz4w7U+k2e5zZa+f6e7aXpk/EpD"
+  crossorigin="anonymous"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+  integrity="sha384-YbW9oBSsy3RWnXnFK4B74XzBToqEhTVQsbT6gPr3V8RibHg0fZq5eFDRauAZW0Xp"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://ahmedhosssam.github.io/css/style.css" />
+
+<link rel="stylesheet" href="https://ahmedhosssam.github.io/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ahmedhosssam.github.io/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://ahmedhosssam.github.io/img/favicon.png" />
+
+
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How I Made ChatGPT Run on My Terminal without an API key?">
+  <meta name="twitter:description" content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a ‘_’ for all the files in that directory).">
+
+
+
+<meta property="og:url" content="https://ahmedhosssam.github.io/posts/chatbang/">
+  <meta property="og:site_name" content="Ahmed Hossam">
+  <meta property="og:title" content="How I Made ChatGPT Run on My Terminal without an API key?">
+  <meta property="og:description" content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a ‘_’ for all the files in that directory).">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-18T21:42:42+03:00">
+    <meta property="article:modified_time" content="2025-08-18T21:42:42+03:00">
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="https://ahmedhosssam.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Ahmed Hossam</span
+    >
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href=""></a></li>
+        
+      
+        
+          <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href=""></a></li>
+      
+    
+      
+        <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">How I Made ChatGPT Run on My Terminal without an API key?</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2025-08-18
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &lsquo;_&rsquo; for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.</p>
+<p>And, I also didn&rsquo;t want to do it with an API key (it would&rsquo;ve been much easier), one of the reasons is that I cannot afford it in the long term, I&rsquo;m still a student. So, I decided to hack around to figure out how can I extract the results from ChatGPT&rsquo;s website using web scraping libraries.</p>
+<p>Here is the Github repo for <code>chatbang</code>: <a href="https://github.com/ahmedhosssam/chatbang">https://github.com/ahmedhosssam/chatbang</a></p>
+<p>I decided to choose golang. There is no big reason behind that choice, I just wanted to learn the language, and the best way to learn a language/framework is to build a project with it.
+I searched for a web scraping library for golang and found out <a href="https://github.com/chromedp/chromedp">chromedp</a> is one of the popular libraries to control real browser instances (Chromium-based) for automation.</p>
+<p>The workflow will be as following:</p>
+<ol>
+<li>Open a headless browser session.</li>
+<li>Open chatgpt.com.</li>
+<li>Wait for the user&rsquo;s prompt.</li>
+<li>Detect the prompt text area in ChatGPT&rsquo;s DOM tree and &ldquo;paste&rdquo; the prompt in it.</li>
+<li>Detect the submit button and wait for a response.</li>
+<li>Detect the <code>copy</code> button to put the response in the clipboard as markdown.</li>
+<li>Use Javascript to read the content of the clipboard</li>
+<li>Render the clipboard content in the terminal</li>
+</ol>
+<h2 id="headless-browser-sessions">
+  Headless Browser Sessions
+  <a href="#headless-browser-sessions" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>What <code>chatbang</code> doing is basically automating what normally people do to access ChatGPT. so it opens a browser session and opens chatgpt.com using a headless session.</p>
+<p>A headless session is a browser session designed to be controlled by a programming script, it lives as a process in the memory. It loads all the website&rsquo;s content (HTML, CSS, JS) but it has no GUI to interact with.</p>
+<p>The browser engines provides standardized protocols to perform such things. For example Chrome DevTools Protocol (CDP), which provides low-level control over browser operations (control tabs, navigate, click, extract data), and that&rsquo;s what <code>chromedp</code> uses under the hood.</p>
+<p>So, <code>chatbang</code> uses this technique to interact with chatgpt. When you type <code>chatbang</code> in the terminal, it opens a headless session in the background, opens chatgpt.com, and waits for the user&rsquo;s prompts in the terminal and execute them one by one.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">allocatorCtx</span>, <span style="color:#a6e22e">cancel</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">NewExecAllocator</span>(<span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>(),
+</span></span><span style="display:flex;"><span>	append(<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">DefaultExecAllocatorOptions</span>[:],
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">ExecPath</span>(<span style="color:#a6e22e">defaultBrowser</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;disable-blink-features&#34;</span>, <span style="color:#e6db74">&#34;AutomationControlled&#34;</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;exclude-switches&#34;</span>, <span style="color:#e6db74">&#34;enable-automation&#34;</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;disable-extensions&#34;</span>, <span style="color:#66d9ef">false</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">UserAgent</span>(<span style="color:#e6db74">&#34;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&#34;</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;disable-default-apps&#34;</span>, <span style="color:#66d9ef">false</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;disable-dev-shm-usage&#34;</span>, <span style="color:#66d9ef">false</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;disable-gpu&#34;</span>, <span style="color:#66d9ef">false</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">UserDataDir</span>(<span style="color:#a6e22e">profileDir</span>),
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Flag</span>(<span style="color:#e6db74">&#34;profile-directory&#34;</span>, <span style="color:#e6db74">&#34;Default&#34;</span>),
+</span></span><span style="display:flex;"><span>	)<span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>This is the code snippet that opens the headless session. Each of these <code>chromedp.Flag</code>s controls the chrome&rsquo;s session behavior.</p>
+<p>The main purpose of most of these flags is to make it very hard for websites to detect automation. If you take the source code from my github repo and remove these flags, chatgpt will detect the automation and will not open for quite a while, maybe your account will get banned? I don&rsquo;t know. But don&rsquo;t worry, with these flags it&rsquo;s nearly impossible to get into trouble with chatgpt.</p>
+<p><code>chatbang</code> uses a new browser profile dedicated for all of that, it creates the new profile in <code>$HOME/.config/chatbang/profile_data</code> and uses it. This new profile needs some configuration to make <code>chatbang</code> works:</p>
+<p>First, you need to log-in to ChatGPT&rsquo;s website. Second, you need to allow the clipboard permission for chatgpt.com to make chatbang copy the content of the page and access the clipboard without asking, if you didn&rsquo;t allow that permission, <code>chatbang</code> will get stuck in the terminal because the browser waits for your permission to allow the clipboard access.</p>
+<p>You can do these steps by executing <code>chatbang --config</code>, by default chatbang uses <code>/usr/bin/google-chrome</code> as a default browser, if you want to change it to any Chromium-based browser (after executing <code>chatbang --config</code>) you can change it from the config file <code>$HOME/.config/chatbang/chatbang</code>. change it to the correct path of your favorite Chromium-based browser.</p>
+<h2 id="playing-with-the-dom-tree">
+  Playing with the DOM Tree
+  <a href="#playing-with-the-dom-tree" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>After opening chagpt.com in a headless session, now we need to understand the page to start manipulating it.</p>
+<p>First, we need to search for the prompt text area to put the prompt in it, and chatgpt&rsquo;s developers make my life easy with this, because the prompt text area has an <code>id</code> called <code>#prompt-textarea</code> which is quite nice.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Run</span>(<span style="color:#a6e22e">taskCtx</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">WaitVisible</span>(<span style="color:#e6db74">`#prompt-textarea`</span>, <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">ByID</span>),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Click</span>(<span style="color:#e6db74">`#prompt-textarea`</span>, <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">ByID</span>),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">SendKeys</span>(<span style="color:#e6db74">`#prompt-textarea`</span>, <span style="color:#a6e22e">modifiedPrompt</span>, <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">ByID</span>),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Click</span>(<span style="color:#e6db74">`#composer-submit-button`</span>, <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">ByID</span>),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">Click</span>(<span style="color:#e6db74">`#prompt-textarea`</span>, <span style="color:#a6e22e">chromedp</span>.<span style="color:#a6e22e">ByID</span>),
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>This code snippet searches for an element with the id <code>#prmopt-textarea</code> and send the prompt to it. And then it searches for the submit button with the id <code>#composer-submit-button</code> and click it.</p>
+<p>The <code>modifiedPrompt</code> variable is the same prompt as the user entered it, but with adding <code> (Make an answer in less than 5 lines)</code>. The reason behind this is that I hate the long responses from ChatGPT. In most cases I just want a one-line response, I don&rsquo;t want a whole article with an introduction and conclusion. Also because I don&rsquo;t the response to fill the whole terminal window, I opened chatbang to answer something and then I close it to continue my life. I don&rsquo;t want the response to distract me from the context of the terminal, if that makes sense.</p>
+<p>Anyways, aftet clicking the submit button we just wait for a response. Here I basically run an infinite for loop (because golang doesn&rsquo;t have a built-in while loop, you need to type <code>for {...}</code> to get the same behavior) that waits for the last copy button in the page to appear, which will appear after chatgpt complete the full response. The reason behind this is that chatgpt&rsquo;s page has a lot copy buttons, and all of them are the same button with the same attributes, so we need to wait for the last button to appear and then click it.</p>
+<p>Sometimes (which is kind of rare) it chooses to click on the copy button of the last prompt, so you see your prompt as a result in the terminal, but that happens very rarely.</p>
+<p>Now, the result is in the clipboard, so we need to access it. I do that using a single Javascript line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; { window.<span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">clipboard</span>.<span style="color:#a6e22e">readText</span>() .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">text</span> =&gt; <span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">text</span>)) .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">err</span> =&gt; <span style="color:#a6e22e">reject</span>(<span style="color:#a6e22e">err</span>)); });
+</span></span></code></pre></div><p>That line reads text from the clipboard using <code>navigator.clipboard.readText()</code>.</p>
+<p>And ChatGPT&rsquo;s website does a very great thing,  it gives you the response as a markdown format, not just text, which is a great opportunity to make the response quite beautiful in the terminal, not just plain text. And that idea was a suggestion from one of my friends, huge thanks to him.</p>
+<p>And that&rsquo;s it! Now we have the response as a markdown format. We need to render it in the terminal. I use <a href="https://github.com/MichaelMure/go-term-markdown">go-term-markdown</a> for that. It&rsquo;s a markdown rendering library written in go, and it&rsquo;s super easy to use.</p>
+<p>Everything else is just a loop to perform all these steps for every prompt.</p>
+<p>Finally, one challenge remains is when chatgpt.com decides to change the code of the page. For example if they decides to change the names of the <code>id</code>s and classnames, the whole program will break. We will need to make a new release for every change. I haven&rsquo;t figured out yet if there is a long term solution for something like this, but we will see.</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/">
+                  <span class="button__text">Why I Quit Competitive Programming</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="https://ahmedhosssam.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Ahmed Hossam</span
+    >
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="https://ahmedhosssam.github.io/bundle.min.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
