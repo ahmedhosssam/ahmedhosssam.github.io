@@ -57,7 +57,7 @@ The main purpose of most of these flags is to make it very hard for websites to 
 
 `chatbang` uses a new browser profile dedicated for all of that, it creates the new profile in `$HOME/.config/chatbang/profile_data` and uses it. This new profile needs some configuration to make `chatbang` works:
 
-First, you need to log-in to ChatGPT's website. Second, you need to allow the clipboard permission for chatgpt.com to make chatbang copy the content of the page and access the clipboard without asking, if you didn't allow that permission, `chatbang` will get stuck in the terminal because the browser waits for your permission to allow the clipboard access.
+First, you need to log-in to ChatGPT's website. Second, you need to allow the clipboard permission for chatgpt.com to make chatbang copy the content of the page and access the clipboard without asking, if you didn't allow that permission, `chatbang` will get stuck in the terminal because the browser waits for your permission to allow the clipboard access, and there is no GUI to see that.
 
 You can do these steps by executing `chatbang --config`, by default chatbang uses `/usr/bin/google-chrome` as a default browser, if you want to change it to any Chromium-based browser (after executing `chatbang --config`) you can change it from the config file `$HOME/.config/chatbang/chatbang`. Change it to the correct path of your favorite Chromium-based browser.
 
