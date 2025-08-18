@@ -9,10 +9,30 @@
     <description>Recent content on Ahmed Hossam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Aug 2025 19:41:41 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 21:42:42 +0300</lastBuildDate>
     
 	<atom:link href="https://ahmedhosssam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I Made ChatGPT Run on My Terminal without an API key?</title>
+      <link>https://ahmedhosssam.github.io/posts/chatbang/</link>
+      <pubDate>Mon, 18 Aug 2025 21:42:42 +0300</pubDate>
+      
+      <guid>https://ahmedhosssam.github.io/posts/chatbang/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory).
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>Why I Quit Competitive Programming</title>
