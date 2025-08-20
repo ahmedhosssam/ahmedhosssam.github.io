@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        The Tiger Book: 1 Introduction ::
+        Ahmed Hossam — A simple theme for Hugo
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
+Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
+For a compiler, it&amp;rsquo;s better to break it to many pieces (modules)."
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://ahmedhosssam.github.io/posts/tiger_intro/" />
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+  integrity="sha384-mll67QQYkNVn4pXYpa9RMfMSX8ZKX9aYJt/0B6SZpHVi6U3HoR10Sn9VD8Kt6p/Z"
+  crossorigin="anonymous">
+
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+  integrity="sha384-sPj+KE0zA5NNz4YeK7zyrjUpglN46+lDkFjzAxz4w7U+k2e5zZa+f6e7aXpk/EpD"
+  crossorigin="anonymous"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+  integrity="sha384-YbW9oBSsy3RWnXnFK4B74XzBToqEhTVQsbT6gPr3V8RibHg0fZq5eFDRauAZW0Xp"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://ahmedhosssam.github.io/css/style.css" />
+
+<link rel="stylesheet" href="https://ahmedhosssam.github.io/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ahmedhosssam.github.io/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://ahmedhosssam.github.io/img/favicon.png" />
+
+
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="https://ahmedhosssam.github.io/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Tiger Book: 1 Introduction">
+  <meta name="twitter:description" content="A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
+Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
+For a compiler, it’s better to break it to many pieces (modules).">
+
+
+
+<meta property="og:url" content="https://ahmedhosssam.github.io/posts/tiger_intro/">
+  <meta property="og:site_name" content="Ahmed Hossam">
+  <meta property="og:title" content="The Tiger Book: 1 Introduction">
+  <meta property="og:description" content="A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
+Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
+For a compiler, it’s better to break it to many pieces (modules).">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-20T06:26:55+03:00">
+    <meta property="article:modified_time" content="2025-08-20T06:26:55+03:00">
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="https://ahmedhosssam.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Ahmed Hossam</span
+    >
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href=""></a></li>
+        
+      
+        
+          <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href=""></a></li>
+      
+    
+      
+        <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">The Tiger Book: 1 Introduction</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2025-08-20
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.</p>
+<p>Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.</p>
+<p>For a compiler, it&rsquo;s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.</p>
+<p>I finished implementing the interpreter of this chatper, it was very easy and straightforward once I figured out what he wanted exactly.</p>
+<p>What he wants is to just traverse on the provided tree and evaluate every node based on its type.
+There are two types of structures that you need to implement, statements and expressions. A statement doesn&rsquo;t return a value, it updates the environment (by assigning the value of an expression for a variable for example) or prints the value of a provided expression.
+An expression returns a value, in this simple interpreter it only returns integers. And expression has many shapes, may be an expression will just return the value of a variable <code>A_IdExp(&quot;a&quot;)</code>, may be it literally returns an integer <code>A_NumExp(1)</code>, may be it evaluates two expressions and then performs a mathematical operation on them:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>A_OpExp(A_IdExp(<span style="color:#e6db74">&#34;a&#34;</span>), A_minus, A_NumExp(<span style="color:#ae81ff">1</span>))
+</span></span></code></pre></div><p>, and then it returns the value of the whole expression.</p>
+<p>And here comes the recursion. When you evaluate an expression, it could contains another expressions, so you will find yourself building a tree and traversing it until you reach a leaf, which should be a non-composite value (an integer), and goes up while returning values until you finish evaluating all of the expressions and executing all of the statements.</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="https://ahmedhosssam.github.io/posts/chatbang/">
+                  <span class="button__text">How I Made ChatGPT Run on My Terminal without an API key?</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="https://ahmedhosssam.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Ahmed Hossam</span
+    >
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="https://ahmedhosssam.github.io/bundle.min.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>

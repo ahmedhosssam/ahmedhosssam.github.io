@@ -9,10 +9,32 @@
     <description>Recent content in Posts on Ahmed Hossam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Aug 2025 21:42:42 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 06:26:55 +0300</lastBuildDate>
     
 	<atom:link href="https://ahmedhosssam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Tiger Book: 1 Introduction</title>
+      <link>https://ahmedhosssam.github.io/posts/tiger_intro/</link>
+      <pubDate>Wed, 20 Aug 2025 06:26:55 +0300</pubDate>
+      
+      <guid>https://ahmedhosssam.github.io/posts/tiger_intro/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
+Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
+For a compiler, it&amp;rsquo;s better to break it to many pieces (modules).
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>How I Made ChatGPT Run on My Terminal without an API key?</title>
