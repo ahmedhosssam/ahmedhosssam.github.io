@@ -10,6 +10,8 @@ I also make [Youtube videos](https://www.youtube.com/@ahmedhossam6060).
 
 When I'm not coding, I'm playing [chess](https://www.chess.com/member/hossamjuniorr).
 
+Email: ahmedhosssamps@gmail.com
+
 ## Projects
 
 - **[Chatbang](https://github.com/ahmedhosssam/chatbang)** – CLI tool to access ChatGPT from the terminal without an API key
