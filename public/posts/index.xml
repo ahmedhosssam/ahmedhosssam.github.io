@@ -9,10 +9,32 @@
     <description>Recent content in Posts on Ahmed Hossam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Aug 2025 06:26:55 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 24 Aug 2025 12:18:42 +0300</lastBuildDate>
     
 	<atom:link href="https://ahmedhosssam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Tiger Book: 2 Lexical Analysis</title>
+      <link>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</link>
+      <pubDate>Sun, 24 Aug 2025 12:18:42 +0300</pubDate>
+      
+      <guid>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          The lexical analyzer (lexer) takes a stream of characters and produces a stream of names, keywords, and punctuation marks; it discards white space and comments between the tokens.
+Lexical tokens have types in any programming language, example:
+ID foo, x, n14 NUM 73, 0, 082 REAL 3.14, 10., 1e9, 0.5 COMMA , NOTEQ != LPAREN ( RPAREN ) Punctuation tokens such as IF, VOID , RETURN constructed from alphabetic characters are called reserved words and, in most languages, cannot be used as identifiers.
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>The Tiger Book: 1 Introduction</title>
