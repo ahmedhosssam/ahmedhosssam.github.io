@@ -216,7 +216,25 @@ ID foo, x, n14 NUM 73, 0, 082 REAL 3.14, 10., 1e9, 0.5 COMMA , NOTEQ != LPAREN (
 <li>RPAREN <code>)</code></li>
 </ul>
 <p>Punctuation tokens such as <code>IF</code>, <code>VOID</code> , <code>RETURN</code> constructed from alphabetic characters are called <strong>reserved words</strong> and, in most languages, cannot be used as identifiers.</p>
-<p><strong>Preprocessor Directives</strong>: The preprocesser operates on the source character stream, producing another character stream, that new character stream is one that is fed to the lexical analyzer.</p>
+<p><strong>Example of the output of the lexer:</strong>
+Given a code snippet like this:</p>
+<pre tabindex="0"><code>let 
+  var x := 42
+in 
+  x + 1
+end
+</code></pre><p>The lexer should output some sequence tokens like this:</p>
+<pre tabindex="0"><code>LET
+VAR
+ID(&#34;x&#34;)
+ASSIGN
+INT(42)
+IN
+ID(&#34;x&#34;)
+PLUS
+INT(1)
+END
+</code></pre><p><strong>Preprocessor Directives</strong>: The preprocesser operates on the source character stream, producing another character stream, that new character stream is one that is fed to the lexical analyzer.</p>
 <p>It is also possible to integrate macro processing with lexical analysis.</p>
 <p>Example of preprocessor directives:</p>
 <pre tabindex="0"><code>#include &lt;stdio.h&gt;
@@ -250,11 +268,17 @@ For a token like <code>ifelse</code>, when we pass it through the 3 DFAs <code>I
 </span></span><span style="display:flex;"><span><span style="color:#f92672">%%</span>
 </span></span></code></pre></div><p>This Lex file has 3 rules:</p>
 <ul>
-<li><code>&quot;hello world&quot;</code> which searches for the string &ldquo;hello world&rdquo; and prints &ldquo;GOODBYE&rdquo; if it finds it.</li>
-<li><code>dog.*cat</code> is a regex that matches the pattern &ldquo;dog, then any number of characters, then a cat&rdquo;, and prints &ldquo;A cat and a dog found&rdquo; if it finds it.</li>
-<li>The regex <code>.</code> searches for any character and then just ignores it.</li>
-</ul>
+<li>
+<p><code>&quot;hello world&quot;</code> which searches for the string &ldquo;hello world&rdquo; and prints &ldquo;GOODBYE&rdquo; if it finds it.</p>
+</li>
+<li>
+<p><code>dog.*cat</code> is a regex that matches the pattern &ldquo;dog, then any number of characters, then a cat&rdquo;, and prints &ldquo;A cat and a dog found&rdquo; if it finds it.</p>
+</li>
+<li>
+<p>The regex <code>.</code> searches for any character and then just ignores it.</p>
 <p><strong>Lex</strong> applys the most important rule that we talked about, which is matching the longest regex. Because here maybe someone would say that if we put <code>. ;</code> before <code>dog.*cat</code> the lexer would ignore an input like this: <code>dogxcat</code> because it matches the first regex. But no, our goal is to find the longest match, and here the longest match is the regex <code>dog.*cat</code> because it returns a valid pattern of 7 characters, but <code>.</code> returns 7 consecutive valid patterns of length 1.</p>
+</li>
+</ul>
 
     </div>
     
