@@ -16,6 +16,30 @@ Lexical tokens have types in any programming language, example:
 
 Punctuation tokens such as `IF`, `VOID` , `RETURN` constructed from alphabetic characters are called **reserved words** and, in most languages, cannot be used as identifiers.
 
+**Example of the output of the lexer:**
+Given a code snippet like this:
+```
+let 
+  var x := 42
+in 
+  x + 1
+end
+```
+
+The lexer should output some sequence tokens like this:
+```
+LET
+VAR
+ID("x")
+ASSIGN
+INT(42)
+IN
+ID("x")
+PLUS
+INT(1)
+END
+```
+
 **Preprocessor Directives**: The preprocesser operates on the source character stream, producing another character stream, that new character stream is one that is fed to the lexical analyzer.
 
 It is also possible to integrate macro processing with lexical analysis.
@@ -68,4 +92,4 @@ This Lex file has 3 rules:
 - `dog.*cat` is a regex that matches the pattern "dog, then any number of characters, then a cat", and prints "A cat and a dog found" if it finds it.
 -  The regex `.` searches for any character and then just ignores it.
 
-**Lex** applys the most important rule that we talked about, which is matching the longest regex. Because here maybe someone would say that if we put `. ;` before `dog.*cat` the lexer would ignore an input like this: `dogxcat` because it matches the first regex. But no, our goal is to find the longest match, and here the longest match is the regex `dog.*cat` because it returns a valid pattern of 7 characters, but `.` returns 7 consecutive valid patterns of length 1.
+	**Lex** applys the most important rule that we talked about, which is matching the longest regex. Because here maybe someone would say that if we put `. ;` before `dog.*cat` the lexer would ignore an input like this: `dogxcat` because it matches the first regex. But no, our goal is to find the longest match, and here the longest match is the regex `dog.*cat` because it returns a valid pattern of 7 characters, but `.` returns 7 consecutive valid patterns of length 1.
