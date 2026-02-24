@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
       <title>
-      Ahmed Hossam
+        How I Made ChatGPT Run on My Terminal without an API key? ::
+        Ahmed Hossam
       </title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory)."
+  content="
+I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &lsquo;_&rsquo; for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.
+"
 />
 <meta
   name="keywords"
   content=""
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://ahmedhosssam.github.io/posts/chatbang/" />
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-  integrity="sha384-mll67QQYkNVn4pXYpa9RMfMSX8ZKX9aYJt/0B6SZpHVi6U3HoR10Sn9VD8Kt6p/Z"
-  crossorigin="anonymous">
-
-
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-  integrity="sha384-sPj+KE0zA5NNz4YeK7zyrjUpglN46+lDkFjzAxz4w7U+k2e5zZa+f6e7aXpk/EpD"
-  crossorigin="anonymous"></script>
-
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-  integrity="sha384-YbW9oBSsy3RWnXnFK4B74XzBToqEhTVQsbT6gPr3V8RibHg0fZq5eFDRauAZW0Xp"
-  crossorigin="anonymous"
-  onload="renderMathInElement(document.body, {
-    delimiters: [
-      {left: '$$', right: '$$', display: true},
-      {left: '$', right: '$', display: false}
-    ]
-  });"></script>
+<link rel="canonical" href="http://localhost:1313/posts/chatbang/" />
 
 
 
@@ -46,36 +28,34 @@
 
 
 
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="http://localhost:1313/style.css" />
 
 
-<link rel="stylesheet" href="https://ahmedhosssam.github.io/css/style.css" />
-
-<link rel="stylesheet" href="https://ahmedhosssam.github.io/style.css" />
-
-
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ahmedhosssam.github.io/img/apple-touch-icon-144-precomposed.png" />
-<link rel="shortcut icon" href="https://ahmedhosssam.github.io/img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.png" />
 
 
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How I Made ChatGPT Run on My Terminal without an API key?">
-  <meta name="twitter:description" content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a ‘_’ for all the files in that directory).">
+  <meta name="twitter:description" content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a ‘_’ for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.">
 
 
 
-<meta property="og:url" content="https://ahmedhosssam.github.io/posts/chatbang/">
+<meta property="og:url" content="http://localhost:1313/posts/chatbang/">
   <meta property="og:site_name" content="Ahmed Hossam">
   <meta property="og:title" content="How I Made ChatGPT Run on My Terminal without an API key?">
-  <meta property="og:description" content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a ‘_’ for all the files in that directory).">
+  <meta property="og:description" content="I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a ‘_’ for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -93,7 +73,7 @@
       <header class="header">
   <span class="header__inner">
     <a
-  href="https://ahmedhosssam.github.io/"
+  href="/"
   class="logo"
   style="text-decoration: none;"
 >
@@ -105,6 +85,7 @@
     <span class="logo__text"
       >Ahmed Hossam</span
     >
+    <span class="logo__cursor"></span>
   
 </a>
 
@@ -119,7 +100,7 @@
         
       
         
-          <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+          <li><a href="/about">About</a></li>
         
       
       
@@ -133,7 +114,7 @@
       
     
       
-        <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+        <li><a href="/about">About</a></li>
       
     
   </ul>
@@ -198,7 +179,7 @@
 
     <div class="post-content">
       
-      <p><img alt="alt text" src="https://ahmedhosssam.github.io/images/ch.png"></p>
+      <p><img src="/images/ch.png" alt="alt text"></p>
 <p>I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &lsquo;_&rsquo; for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.</p>
 <p>And, I also didn&rsquo;t want to do it with an API key (it would&rsquo;ve been much easier), one of the reasons is that I cannot afford it in the long term, I&rsquo;m still a student. So, I decided to hack around to figure out how can I extract the results from ChatGPT&rsquo;s website using web scraping libraries.</p>
 <p>Here is the Github repo for <code>chatbang</code>: <a href="https://github.com/ahmedhosssam/chatbang">https://github.com/ahmedhosssam/chatbang</a></p>
@@ -280,7 +261,7 @@ I searched for a web scraping library for golang and found out <a href="https://
           <div class="pagination__buttons">
             
               <span class="button previous">
-                <a href="https://ahmedhosssam.github.io/posts/tiger_intro/">
+                <a href="http://localhost:1313/posts/tiger_intro/">
                   <span class="button__icon">←</span>
                   <span class="button__text">The Tiger Book: 1 Introduction</span>
                 </a>
@@ -288,7 +269,7 @@ I searched for a web scraping library for golang and found out <a href="https://
             
             
               <span class="button next">
-                <a href="https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/">
+                <a href="http://localhost:1313/posts/why-i-quit-competitive-programming/">
                   <span class="button__text">Why I Quit Competitive Programming</span>
                   <span class="button__icon">→</span>
                 </a>
@@ -314,7 +295,7 @@ I searched for a web scraping library for golang and found out <a href="https://
   <div class="footer__inner">
     
       <a
-  href="https://ahmedhosssam.github.io/"
+  href="/"
   class="logo"
   style="text-decoration: none;"
 >
@@ -326,11 +307,12 @@ I searched for a web scraping library for golang and found out <a href="https://
     <span class="logo__text"
       >Ahmed Hossam</span
     >
+    <span class="logo__cursor"></span>
   
 </a>
 
       <div class="copyright">
-        <span>© 2025 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>© 2026 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
         <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
       </div>
     
@@ -341,7 +323,7 @@ I searched for a web scraping library for golang and found out <a href="https://
 
 
 
-<script type="text/javascript" src="https://ahmedhosssam.github.io/bundle.min.js"></script>
+<script type="text/javascript" src="/bundle.min.js"></script>
 
 
       

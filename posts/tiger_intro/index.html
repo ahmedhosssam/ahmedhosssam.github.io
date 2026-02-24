@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
       <title>
-      Ahmed Hossam
+        The Tiger Book: 1 Introduction ::
+        Ahmed Hossam
       </title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -12,35 +13,15 @@
   name="description"
   content="A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
 Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
-For a compiler, it&amp;rsquo;s better to break it to many pieces (modules)."
+For a compiler, it&rsquo;s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.
+"
 />
 <meta
   name="keywords"
   content=""
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://ahmedhosssam.github.io/posts/tiger_intro/" />
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-  integrity="sha384-mll67QQYkNVn4pXYpa9RMfMSX8ZKX9aYJt/0B6SZpHVi6U3HoR10Sn9VD8Kt6p/Z"
-  crossorigin="anonymous">
-
-
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-  integrity="sha384-sPj+KE0zA5NNz4YeK7zyrjUpglN46+lDkFjzAxz4w7U+k2e5zZa+f6e7aXpk/EpD"
-  crossorigin="anonymous"></script>
-
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-  integrity="sha384-YbW9oBSsy3RWnXnFK4B74XzBToqEhTVQsbT6gPr3V8RibHg0fZq5eFDRauAZW0Xp"
-  crossorigin="anonymous"
-  onload="renderMathInElement(document.body, {
-    delimiters: [
-      {left: '$$', right: '$$', display: true},
-      {left: '$', right: '$', display: false}
-    ]
-  });"></script>
+<link rel="canonical" href="http://localhost:1313/posts/tiger_intro/" />
 
 
 
@@ -48,23 +29,21 @@ For a compiler, it&amp;rsquo;s better to break it to many pieces (modules)."
 
 
 
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="http://localhost:1313/style.css" />
 
 
-<link rel="stylesheet" href="https://ahmedhosssam.github.io/css/style.css" />
-
-<link rel="stylesheet" href="https://ahmedhosssam.github.io/style.css" />
-
-
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ahmedhosssam.github.io/img/apple-touch-icon-144-precomposed.png" />
-<link rel="shortcut icon" href="https://ahmedhosssam.github.io/img/favicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="http://localhost:1313/img/favicon.png" />
 
 
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://ahmedhosssam.github.io/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 
 
 
@@ -72,16 +51,16 @@ For a compiler, it&amp;rsquo;s better to break it to many pieces (modules)."
   <meta name="twitter:title" content="The Tiger Book: 1 Introduction">
   <meta name="twitter:description" content="A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
 Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
-For a compiler, it’s better to break it to many pieces (modules).">
+For a compiler, it’s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.">
 
 
 
-<meta property="og:url" content="https://ahmedhosssam.github.io/posts/tiger_intro/">
+<meta property="og:url" content="http://localhost:1313/posts/tiger_intro/">
   <meta property="og:site_name" content="Ahmed Hossam">
   <meta property="og:title" content="The Tiger Book: 1 Introduction">
   <meta property="og:description" content="A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
 Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
-For a compiler, it’s better to break it to many pieces (modules).">
+For a compiler, it’s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -99,7 +78,7 @@ For a compiler, it’s better to break it to many pieces (modules).">
       <header class="header">
   <span class="header__inner">
     <a
-  href="https://ahmedhosssam.github.io/"
+  href="/"
   class="logo"
   style="text-decoration: none;"
 >
@@ -111,6 +90,7 @@ For a compiler, it’s better to break it to many pieces (modules).">
     <span class="logo__text"
       >Ahmed Hossam</span
     >
+    <span class="logo__cursor"></span>
   
 </a>
 
@@ -125,7 +105,7 @@ For a compiler, it’s better to break it to many pieces (modules).">
         
       
         
-          <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+          <li><a href="/about">About</a></li>
         
       
       
@@ -139,7 +119,7 @@ For a compiler, it’s better to break it to many pieces (modules).">
       
     
       
-        <li><a href="https://ahmedhosssam.github.io/about">About</a></li>
+        <li><a href="/about">About</a></li>
       
     
   </ul>
@@ -228,7 +208,7 @@ An expression returns a value, in this simple interpreter it only returns intege
           <div class="pagination__buttons">
             
               <span class="button previous">
-                <a href="https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/">
+                <a href="http://localhost:1313/posts/tiger_lexical_analysis/">
                   <span class="button__icon">←</span>
                   <span class="button__text">The Tiger Book: 2 Lexical Analysis</span>
                 </a>
@@ -236,7 +216,7 @@ An expression returns a value, in this simple interpreter it only returns intege
             
             
               <span class="button next">
-                <a href="https://ahmedhosssam.github.io/posts/chatbang/">
+                <a href="http://localhost:1313/posts/chatbang/">
                   <span class="button__text">How I Made ChatGPT Run on My Terminal without an API key?</span>
                   <span class="button__icon">→</span>
                 </a>
@@ -262,7 +242,7 @@ An expression returns a value, in this simple interpreter it only returns intege
   <div class="footer__inner">
     
       <a
-  href="https://ahmedhosssam.github.io/"
+  href="/"
   class="logo"
   style="text-decoration: none;"
 >
@@ -274,11 +254,12 @@ An expression returns a value, in this simple interpreter it only returns intege
     <span class="logo__text"
       >Ahmed Hossam</span
     >
+    <span class="logo__cursor"></span>
   
 </a>
 
       <div class="copyright">
-        <span>© 2025 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>© 2026 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
         <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
       </div>
     
@@ -289,7 +270,7 @@ An expression returns a value, in this simple interpreter it only returns intege
 
 
 
-<script type="text/javascript" src="https://ahmedhosssam.github.io/bundle.min.js"></script>
+<script type="text/javascript" src="/bundle.min.js"></script>
 
 
       
