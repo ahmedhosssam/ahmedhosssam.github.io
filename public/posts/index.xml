@@ -5,21 +5,21 @@
     
     
     
-    <link>https://ahmedhosssam.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Ahmed Hossam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Aug 2025 12:18:42 +0300</lastBuildDate>
     
-	<atom:link href="https://ahmedhosssam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Tiger Book: 2 Lexical Analysis</title>
-      <link>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</link>
+      <link>http://localhost:1313/posts/tiger_lexical_analysis/</link>
       <pubDate>Sun, 24 Aug 2025 12:18:42 +0300</pubDate>
       
-      <guid>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</guid>
+      <guid>http://localhost:1313/posts/tiger_lexical_analysis/</guid>
       <description>
         
           
@@ -28,9 +28,18 @@
         
         
         
-          The lexical analyzer (lexer) takes a stream of characters and produces a stream of names, keywords, and punctuation marks; it discards white space and comments between the tokens.
-Lexical tokens have types in any programming language, example:
-ID foo, x, n14 NUM 73, 0, 082 REAL 3.14, 10., 1e9, 0.5 COMMA , NOTEQ != LPAREN ( RPAREN ) Punctuation tokens such as IF, VOID , RETURN constructed from alphabetic characters are called reserved words and, in most languages, cannot be used as identifiers.
+          &lt;p&gt;The lexical analyzer (lexer) takes a stream of characters and produces a stream of names, keywords, and punctuation marks; it discards white space and comments between the tokens.&lt;/p&gt;
+&lt;p&gt;Lexical tokens have types in any programming language, example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ID &lt;code&gt;foo, x, n14&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;NUM &lt;code&gt;73, 0, 082&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;REAL &lt;code&gt;3.14, 10., 1e9, 0.5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;COMMA &lt;code&gt;,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;NOTEQ &lt;code&gt;!=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;LPAREN &lt;code&gt;(&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;RPAREN &lt;code&gt;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Punctuation tokens such as &lt;code&gt;IF&lt;/code&gt;, &lt;code&gt;VOID&lt;/code&gt; , &lt;code&gt;RETURN&lt;/code&gt; constructed from alphabetic characters are called &lt;strong&gt;reserved words&lt;/strong&gt; and, in most languages, cannot be used as identifiers.&lt;/p&gt;
           
         
         </description>
@@ -38,10 +47,10 @@ ID foo, x, n14 NUM 73, 0, 082 REAL 3.14, 10., 1e9, 0.5 COMMA , NOTEQ != LPAREN (
     
     <item>
       <title>The Tiger Book: 1 Introduction</title>
-      <link>https://ahmedhosssam.github.io/posts/tiger_intro/</link>
+      <link>http://localhost:1313/posts/tiger_intro/</link>
       <pubDate>Wed, 20 Aug 2025 06:26:55 +0300</pubDate>
       
-      <guid>https://ahmedhosssam.github.io/posts/tiger_intro/</guid>
+      <guid>http://localhost:1313/posts/tiger_intro/</guid>
       <description>
         
           
@@ -50,9 +59,9 @@ ID foo, x, n14 NUM 73, 0, 082 REAL 3.14, 10., 1e9, 0.5 COMMA , NOTEQ != LPAREN (
         
         
         
-          A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.
-Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.
-For a compiler, it&amp;rsquo;s better to break it to many pieces (modules).
+          &lt;p&gt;A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.&lt;/p&gt;
+&lt;p&gt;Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.&lt;/p&gt;
+&lt;p&gt;For a compiler, it&amp;rsquo;s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.&lt;/p&gt;
           
         
         </description>
@@ -60,10 +69,10 @@ For a compiler, it&amp;rsquo;s better to break it to many pieces (modules).
     
     <item>
       <title>How I Made ChatGPT Run on My Terminal without an API key?</title>
-      <link>https://ahmedhosssam.github.io/posts/chatbang/</link>
+      <link>http://localhost:1313/posts/chatbang/</link>
       <pubDate>Mon, 18 Aug 2025 21:42:42 +0300</pubDate>
       
-      <guid>https://ahmedhosssam.github.io/posts/chatbang/</guid>
+      <guid>http://localhost:1313/posts/chatbang/</guid>
       <description>
         
           
@@ -72,7 +81,8 @@ For a compiler, it&amp;rsquo;s better to break it to many pieces (modules).
         
         
         
-          I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory).
+          &lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/ch.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.&lt;/p&gt;
           
         
         </description>
@@ -80,10 +90,10 @@ For a compiler, it&amp;rsquo;s better to break it to many pieces (modules).
     
     <item>
       <title>Why I Quit Competitive Programming</title>
-      <link>https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/</link>
+      <link>http://localhost:1313/posts/why-i-quit-competitive-programming/</link>
       <pubDate>Wed, 13 Aug 2025 19:41:41 +0300</pubDate>
       
-      <guid>https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/</guid>
+      <guid>http://localhost:1313/posts/why-i-quit-competitive-programming/</guid>
       <description>
         
           
@@ -92,7 +102,12 @@ For a compiler, it&amp;rsquo;s better to break it to many pieces (modules).
         
         
         
-          TL;DR # I tried competitive programming for a whole year and it didn&amp;rsquo;t work out well for me, I didn&amp;rsquo;t enjoy it and didn&amp;rsquo;t achieve anything remarkable as well. So it&amp;rsquo;s better to take the L and move on and try other things I wanted to try, but I couldn&amp;rsquo;t because of competitive programming. For the rest of the article I&amp;rsquo;m going to talk about the sunk cost fallacy.
+          &lt;h2 id=&#34;tldr&#34;&gt;
+  TL;DR
+  &lt;a href=&#34;#tldr&#34; class=&#34;h-anchor&#34; aria-hidden=&#34;true&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I tried competitive programming for a whole year and it didn&amp;rsquo;t work out well for me, I didn&amp;rsquo;t enjoy it and didn&amp;rsquo;t achieve anything remarkable as well. So it&amp;rsquo;s better to take the L and move on and try other things I wanted to try, but I couldn&amp;rsquo;t because of competitive programming.
+For the rest of the article I&amp;rsquo;m going to talk about the sunk cost fallacy.&lt;/p&gt;
           
         
         </description>

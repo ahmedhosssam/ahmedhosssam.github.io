@@ -4,6 +4,8 @@ title = 'About'
 
 Hi, I’m Ahmed Hossam, a programmer, computer science student, chess fan, and aspiring engineer.
 
+Currently I'm a Software Engineer at [TJM Labs](https://tjmlabs.com)
+
 You can find me on:
 - [Github](https://github.com/ahmedhosssam)
 - [Twitter (X)](https://x.com/ahmedhossvm)

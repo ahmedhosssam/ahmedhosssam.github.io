@@ -6,6 +6,8 @@ title: "Ahmed Hossam"
 
 Hi, I'm Ahmed Hossam, a programmer, computer science student, and aspiring engineer.
 
+Currently I'm a Software Engineer at [TJM Labs](https://tjmlabs.com)
+
 I also make [Youtube videos](https://www.youtube.com/@ahmedhossam6060).
 
 When I'm not coding, I'm playing [chess](https://www.chess.com/member/hossamjuniorr).
