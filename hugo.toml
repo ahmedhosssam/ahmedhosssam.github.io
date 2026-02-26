@@ -3,7 +3,8 @@ languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "hello-friend"
-paginate = 5
+[pagination]
+  pagerSize = 5
 
 unsafe = true
 canonifyURLs = true

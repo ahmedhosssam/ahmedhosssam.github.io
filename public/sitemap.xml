@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://ahmedhosssam.github.io/</loc>
     <lastmod>2025-08-24T12:18:42+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://ahmedhosssam.github.io/posts/</loc>
     <lastmod>2025-08-24T12:18:42+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tiger_lexical_analysis/</loc>
+    <loc>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</loc>
     <lastmod>2025-08-24T12:18:42+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tiger_intro/</loc>
+    <loc>https://ahmedhosssam.github.io/posts/tiger_intro/</loc>
     <lastmod>2025-08-20T06:26:55+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chatbang/</loc>
+    <loc>https://ahmedhosssam.github.io/posts/chatbang/</loc>
     <lastmod>2025-08-18T21:42:42+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/why-i-quit-competitive-programming/</loc>
+    <loc>https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/</loc>
     <lastmod>2025-08-13T19:41:41+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://ahmedhosssam.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://ahmedhosssam.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://ahmedhosssam.github.io/tags/</loc>
   </url>
 </urlset>
