@@ -1,34 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Ahmed Hossam</title>
-    
-    
-    
-    <link>https://ahmedhosssam.github.io/posts/</link>
-    <description>Recent content in Posts on Ahmed Hossam</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 24 Aug 2025 12:18:42 +0300</lastBuildDate>
-    
-	<atom:link href="https://ahmedhosssam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>The Tiger Book: 2 Lexical Analysis</title>
-      <link>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</link>
-      <pubDate>Sun, 24 Aug 2025 12:18:42 +0300</pubDate>
-      
-      <guid>https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;The lexical analyzer (lexer) takes a stream of characters and produces a stream of names, keywords, and punctuation marks; it discards white space and comments between the tokens.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Ahmed Hossam</title><link>/posts/</link><description>Recent content in Posts on Ahmed Hossam</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Aug 2025 12:18:42 +0300</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>The Tiger Book: 2 Lexical Analysis</title><link>/posts/tiger_lexical_analysis/</link><pubDate>Sun, 24 Aug 2025 12:18:42 +0300</pubDate><guid>/posts/tiger_lexical_analysis/</guid><description>
+&lt;p&gt;The lexical analyzer (lexer) takes a stream of characters and produces a stream of names, keywords, and punctuation marks; it discards white space and comments between the tokens.&lt;/p&gt;
 &lt;p&gt;Lexical tokens have types in any programming language, example:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ID &lt;code&gt;foo, x, n14&lt;/code&gt;&lt;/li&gt;
@@ -39,79 +10,16 @@
 &lt;li&gt;LPAREN &lt;code&gt;(&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;RPAREN &lt;code&gt;)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Punctuation tokens such as &lt;code&gt;IF&lt;/code&gt;, &lt;code&gt;VOID&lt;/code&gt; , &lt;code&gt;RETURN&lt;/code&gt; constructed from alphabetic characters are called &lt;strong&gt;reserved words&lt;/strong&gt; and, in most languages, cannot be used as identifiers.&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>The Tiger Book: 1 Introduction</title>
-      <link>https://ahmedhosssam.github.io/posts/tiger_intro/</link>
-      <pubDate>Wed, 20 Aug 2025 06:26:55 +0300</pubDate>
-      
-      <guid>https://ahmedhosssam.github.io/posts/tiger_intro/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.&lt;/p&gt;
+&lt;p&gt;Punctuation tokens such as &lt;code&gt;IF&lt;/code&gt;, &lt;code&gt;VOID&lt;/code&gt; , &lt;code&gt;RETURN&lt;/code&gt; constructed from alphabetic characters are called &lt;strong&gt;reserved words&lt;/strong&gt; and, in most languages, cannot be used as identifiers.&lt;/p&gt;</description></item><item><title>The Tiger Book: 1 Introduction</title><link>/posts/tiger_intro/</link><pubDate>Wed, 20 Aug 2025 06:26:55 +0300</pubDate><guid>/posts/tiger_intro/</guid><description>
+&lt;p&gt;A compiler is built from many modules (lexical analysis, parsing, semantic analysis, IR translation, optimization, code generation, etc). Each module does a specific job, but they must work together. The interfaces between them are just as critical as the algorithms inside the modules.&lt;/p&gt;
 &lt;p&gt;Any large software system is much easier to understand and implement if the designer takes care with the fundamental abstractions and interfaces.&lt;/p&gt;
-&lt;p&gt;For a compiler, it&amp;rsquo;s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>How I Made ChatGPT Run on My Terminal without an API key?</title>
-      <link>https://ahmedhosssam.github.io/posts/chatbang/</link>
-      <pubDate>Mon, 18 Aug 2025 21:42:42 +0300</pubDate>
-      
-      <guid>https://ahmedhosssam.github.io/posts/chatbang/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;&lt;img src=&#34;https://ahmedhosssam.github.io/images/ch.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Why I Quit Competitive Programming</title>
-      <link>https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/</link>
-      <pubDate>Wed, 13 Aug 2025 19:41:41 +0300</pubDate>
-      
-      <guid>https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;h2 id=&#34;tldr&#34;&gt;
-  TL;DR
-  &lt;a href=&#34;#tldr&#34; class=&#34;h-anchor&#34; aria-hidden=&#34;true&#34;&gt;#&lt;/a&gt;
+&lt;p&gt;For a compiler, it&amp;rsquo;s better to break it to many pieces (modules). This allows for reuse of the components. For example, to change the target-machine for which the compiler generates machine code, you just need to change Frame Layout and Instruction Selection modules.&lt;/p&gt;</description></item><item><title>How I Made ChatGPT Run on My Terminal without an API key?</title><link>/posts/chatbang/</link><pubDate>Mon, 18 Aug 2025 21:42:42 +0300</pubDate><guid>/posts/chatbang/</guid><description>
+&lt;p&gt;&lt;img src="/images/ch.png" alt="alt text"&gt;&lt;/p&gt;
+&lt;p&gt;I had a problem where I wanted to stop leaving the terminal and going to ChatGPT back and forth just for a quick question. For example: git commands, I always forget most of git commands and I want to ask ChatGPT how can I do something using git. Also to take a suggestion for how to do something using bash (write a bash script to replace every space with a &amp;lsquo;_&amp;rsquo; for all the files in that directory). It would be a lot faster if I can do it from the terminal without going to the browser.&lt;/p&gt;</description></item><item><title>Why I Quit Competitive Programming</title><link>/posts/why-i-quit-competitive-programming/</link><pubDate>Wed, 13 Aug 2025 19:41:41 +0300</pubDate><guid>/posts/why-i-quit-competitive-programming/</guid><description>
+&lt;h2 id="tldr"&gt;
+TL;DR
+&lt;a href="#tldr" class="h-anchor" aria-hidden="true"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;I tried competitive programming for a whole year and it didn&amp;rsquo;t work out well for me, I didn&amp;rsquo;t enjoy it and didn&amp;rsquo;t achieve anything remarkable as well. So it&amp;rsquo;s better to take the L and move on and try other things I wanted to try, but I couldn&amp;rsquo;t because of competitive programming.
-For the rest of the article I&amp;rsquo;m going to talk about the sunk cost fallacy.&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-  </channel>
-</rss>
+For the rest of the article I&amp;rsquo;m going to talk about the sunk cost fallacy.&lt;/p&gt;</description></item><item><title/><link>/posts/why_claude_code_is_life_changing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/posts/why_claude_code_is_life_changing/</guid><description>
+&lt;p&gt;uasdgoiasdfgdsfgsdf&lt;/p&gt;</description></item></channel></rss>
