@@ -22,11 +22,11 @@ Email: ahmedhosssamps@gmail.com
 
 ## Writing
 
-- **[How I Made ChatGPT Run on My Terminal without an API key?](https://ahmedhosssam.github.io/posts/chatbang/)**
-- **[Why I Quit Competitive Programming](https://ahmedhosssam.github.io/posts/why-i-quit-competitive-programming/)**
+- **[How I Made ChatGPT Run on My Terminal without an API key?](https://ahmedhossvm.dev/posts/chatbang/)**
+- **[Why I Quit Competitive Programming](https://ahmedhossvm.dev/posts/why-i-quit-competitive-programming/)**
 
 ## Reading Notes
 
 - **[The Tiger Book](https://www.cs.princeton.edu/~appel/modern/c/)**
-    - [1 Introduction](https://ahmedhosssam.github.io/posts/tiger_intro/)
-    - [2 Lexical Analysis](https://ahmedhosssam.github.io/posts/tiger_lexical_analysis/)
+    - [1 Introduction](https://ahmedhossvm.dev/posts/tiger_intro/)
+    - [2 Lexical Analysis](https://ahmedhossvm.dev/posts/tiger_lexical_analysis/)
